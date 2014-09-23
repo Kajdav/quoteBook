@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app='quoteBook'>
+	<head>
+		<meta charset='UTF-8'>
+		<title>QuoteBook</title>
+		<link typ='stylesheet' href='Styles/style.css'>
+	</head>
+	<body ng-controller='mainCtrl'>
+		<button ng-click='showAddItems()'>Add Items</button>
+		<div ng-show='showAddItem'>
+			<input type='text' placeholder='Quote Text' ng-model='addItemText'></input>
+			<input type='text' placeholder='Quote Author' ng-model='addItemAuthor'></input>
+			<button ng-click='addItem()'>Add Item</button>
+		</div>
+		{{addItemInput}}
+		<ui>
+			<li ng-repeat='items in quotes'> {{items.text}} - {{items.author}}</li>
+		</ui>
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular.min.js'></script>
+		<script src='app/app.js'></script>
+		<script src='app/maincontroller.js'></script>
+		<script src='app/mainservice.js'></script>
+	</body>
+</html>
