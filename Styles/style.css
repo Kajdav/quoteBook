@@ -2,11 +2,14 @@ body {
 	width: 100%
 	margin: 0px;
 	font-family: 'Open Sans Condensed', sans-serif;
+	background: #FFF4DE;
+	min-width: 420px;
+	box-sizing: border-box;
 }
 .container {
 	width: 65%;
 	max-width: 500px;
-	min-width: 310px;
+	min-width: 370px;
 	margin: 30px auto;
 }
 h1 {
@@ -14,6 +17,9 @@ h1 {
 	font-size: 4rem;
 	border: 0px solid #000;
 	box-shadow: 0px 0px 7px .5px #000;
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: bold;
+	background: #F5E2C8;
 }
 .buttons {
 	display: flex;
@@ -29,12 +35,17 @@ li {
 .author {
 	display: block;
 	font-style: italic;
-	text-align: right;
-	padding-right: 100px;
+	padding-left: 275px;
 }
 button {
-	background: #fff;
+	background: #F5E2C8;
 	font-size: 1rem;
+	margin: 2px;
+	border: none;
+	box-shadow: 1px 1px 4px .5px #444;
+}
+input {
+	margin: 2px;
 }
 .inputs {
 	width: 100%;
@@ -42,3 +53,14 @@ button {
 	flex-direction: column;
 	align-items: center;
 }
+@media (max-width: 800px) {
+	.author {
+		padding: 0;
+		line-height: 40px;
+	}
+}
+/*@media (max-width: 600px) {
+	h1 {
+		width: 370px;
+	}
+}*/
