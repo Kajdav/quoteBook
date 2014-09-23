@@ -28,7 +28,8 @@
 			<!-- <button ng-click='filterItems()'>Filter Items</button> --> <!-- Found this to be unnecessary. -->
 		</div>
 		<ui>
-			<li ng-repeat='items in quotes | filter: filterText'> {{items.text}} - <span class='author'>{{items.author}}</span><hr></li>
+			<li ng-repeat='items in quotes | filter: filterText'> {{items.text}} 
+			<span class='author'>- {{items.author}}</span><hr></li>
 		</ui>
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular.min.js'></script>
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular-cookies.js'></script>
